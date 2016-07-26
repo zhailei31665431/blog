@@ -4,14 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives | zhailei的个人博客</title>
+  <title>line-height的百分比和1.5有什么区别? | zhailei的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="zhailei的个人博客">
-<meta property="og:url" content="http://zhailei.net:80/archives/index.html">
+  <meta name="description" content="代码：
+123456&amp;lt;div style=&amp;quot;line-height:150%;font-size:16px;&amp;quot;&amp;gt;	父元素	&amp;lt;div style=&amp;quot;font-size:30px;&amp;quot;&amp;gt;		line-height行高	&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1.如果line-height为百分比就会根据父元素字体大小计算出行高来让">
+<meta property="og:type" content="article">
+<meta property="og:title" content="line-height的百分比和1.5有什么区别?">
+<meta property="og:url" content="http://zhailei.net:80/2016/07/26/article/index.html">
 <meta property="og:site_name" content="zhailei的个人博客">
+<meta property="og:description" content="代码：
+123456&amp;lt;div style=&amp;quot;line-height:150%;font-size:16px;&amp;quot;&amp;gt;	父元素	&amp;lt;div style=&amp;quot;font-size:30px;&amp;quot;&amp;gt;		line-height行高	&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1.如果line-height为百分比就会根据父元素字体大小计算出行高来让">
+<meta property="og:updated_time" content="2016-07-26T03:10:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zhailei的个人博客">
+<meta name="twitter:title" content="line-height的百分比和1.5有什么区别?">
+<meta name="twitter:description" content="代码：
+123456&amp;lt;div style=&amp;quot;line-height:150%;font-size:16px;&amp;quot;&amp;gt;	父元素	&amp;lt;div style=&amp;quot;font-size:30px;&amp;quot;&amp;gt;		line-height行高	&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+1.如果line-height为百分比就会根据父元素字体大小计算出行高来让">
   
     <link rel="alternative" href="/atom.xml" title="zhailei的个人博客" type="application/atom+xml">
   
@@ -160,76 +170,89 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-article" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/26/article/" class="archive-article-date">
-  	<time datetime="2016-07-26T03:00:48.000Z" itemprop="datePublished">Jul 26</time>
+    <div class="article-meta">
+      <a href="/2016/07/26/article/" class="article-date">
+  	<time datetime="2016-07-26T03:00:48.000Z" itemprop="datePublished">2016-07-26</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/26/article/">line-height的百分比和1.5有什么区别?</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      line-height的百分比和1.5有什么区别?
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;div style=&quot;line-height:150%;font-size:16px;&quot;&gt;</div><div class="line">	父元素</div><div class="line">	&lt;div style=&quot;font-size:30px;&quot;&gt;</div><div class="line">		line-height行高</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>1.如果line-height为百分比就会根据父元素字体大小计算出行高来让子元素继承</p>
+<pre><code>eg:16px * 150% = 24px
+</code></pre><p>2.如果line-height为1.5不带单位的会根据子元素的字体大小来计算行高值然后让子元素继承</p>
+<pre><code>eg:30px*1.5 = 45px
+</code></pre>
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/25/Hello/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello Word</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/25/Hello/" class="archive-article-date">
-  	<time datetime="2016-07-25T14:04:56.000Z" itemprop="datePublished">Jul 25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/25/Hello/">Hello Word</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="article" data-title="line-height的百分比和1.5有什么区别?" data-url="http://zhailei.net:80/2016/07/26/article/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zhailei"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -255,8 +278,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false

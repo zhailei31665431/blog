@@ -162,6 +162,62 @@
 
       <div class="body-wrap">
   
+    <article id="post-article" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/26/article/" class="article-date">
+  	<time datetime="2016-07-26T03:00:48.000Z" itemprop="datePublished">2016-07-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/26/article/">line-height的百分比和1.5有什么区别?</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;div style=&quot;line-height:150%;font-size:16px;&quot;&gt;</div><div class="line">	父元素</div><div class="line">	&lt;div style=&quot;font-size:30px;&quot;&gt;</div><div class="line">		line-height行高</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>1.如果line-height为百分比就会根据父元素字体大小计算出行高来让子元素继承</p>
+<pre><code>eg:16px * 150% = 24px
+</code></pre><p>2.如果line-height为1.5不带单位的会根据子元素的字体大小来计算行高值然后让子元素继承</p>
+<pre><code>eg:30px*1.5 = 45px
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-Hello" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
